@@ -14,13 +14,12 @@ function App() {
     <div className="h-screen w-screen flex flex-col overflow-hidden font-sans antialiased">
       
       {/* Hero Section - Fixed Height */}
-      <header className="bg-[#0f172a] text-white flex-shrink-0 px-6 py-6 text-center">
+      <header className="bg-[#0f172a] text-white flex-shrink-0 px-6 py-6 md:py-5 text-center">
         <h2 className="text-2xl sm:text-3xl font-medium leading-tight">
-          Trade across NSE, BSE & MCX
+          Trade across NSE, BSE & MCX <span className="text-xl sm:text-2xl font-medium mt-2">
+          -  all in one platform
+          </span>
         </h2>
-        <p className="text-xl sm:text-2xl font-medium mt-2">
-          — all in one platform
-        </p>
       </header>
 
       {/* Main Content - Takes remaining height */}
@@ -54,7 +53,7 @@ function App() {
                 {/* WhatsApp Button */}
                 <div className="flex justify-center">
                   <a
-                    href="https://wa.me/9898427047?text=hello,%20i%20want%20to%20start%20trading"
+                    href="https://wa.me/9898427047?text=Hello!%20Can%20I%20get%20more%20information%20on%20this%3F"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#25D366] text-white inline-flex items-center justify-center gap-2 px-6 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold shadow-xl hover:bg-[#20BA5A] transition-all ml-50 md:ml-150"
