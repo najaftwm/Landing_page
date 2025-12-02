@@ -11,7 +11,7 @@ function App() {
   ];
 
   return (
-    <div className="h-screen w-screen flex flex-col overflow-hidden font-sans antialiased">
+    <div className="min-h-screen w-screen flex flex-col overflow-y-auto font-sans antialiased">
       
       {/* Hero Section - Fixed Height */}
       <header className="bg-[#0f172a] text-white flex-shrink-0 px-6 py-6 md:py-5 text-center">
@@ -23,8 +23,8 @@ function App() {
       </header>
 
       {/* Main Content - Takes remaining height */}
-      <main className="flex-1 bg-gradient-to-b from-[#f1f5f9] to-[#e0e7ff] px-6 py-6 flex flex-col justify-between">
-        <div className="max-w-6xl mx-auto w-full">
+      <main className="flex-1 bg-gradient-to-b from-[#f1f5f9] to-[#e0e7ff] px-6 py-6 flex flex-col justify-between min-h-0">
+        <div className="max-w-6xl mx-auto w-full flex-1 flex flex-col">
 
           {/* Title */}
           <h1 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] text-center mb-12">
@@ -32,7 +32,7 @@ function App() {
           </h1>
 
           {/* 2-Column Grid - Always Side by Side */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-8 items-stretch min-h-0 relative">
+          <div className="grid grid-cols-2 gap-4 sm:gap-8 items-stretch min-h-0 relative flex-1">
             {/* Left: Features */}
             <ul className="space-y-1 sm:space-y-7 text-[#0f172a] relative">
               {features.map((item, i) => (
@@ -45,7 +45,7 @@ function App() {
               ))}
               
               {/* CTA Button - Spanning from features start to mobile image */}
-              <li className="mt-[80px] space-y-3 sm:space-y-4">
+              <li className="mt-[80px] space-y-3 sm:space-y-3">  
                 <button className="bg-[#0f172a] text-white w-[calc(200%+1rem)] sm:w-[calc(200%+2rem)] px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold shadow-2xl hover:bg-[#1e293b] transition-all">
                   Start Your Trading Journey Today!
                 </button>
@@ -82,6 +82,13 @@ function App() {
             </div>
           </div>
 
+        </div>
+
+        {/* Disclaimer */}
+        <div className="max-w-6xl mx-auto w-full px-4 pt-4 pb-4 sm:pt-6 sm:pb-6 flex-shrink-0">
+          <p className="text-[12px] sm:text-xs text-gray-500 text-center leading-relaxed max-w-4xl mx-auto">
+            Disclaimer: Trading in the securities market is subject to market risks; please read all related documents carefully before trading.
+          </p>
         </div>
       </main>
     </div>
