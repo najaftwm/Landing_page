@@ -14,7 +14,7 @@ function App() {
     <div className="h-screen w-screen flex flex-col overflow-hidden font-sans antialiased">
       
       {/* Hero Section - Fixed Height */}
-      <header className="bg-[#0f172a] text-white flex-shrink-0 px-6 py-3 text-center">
+      <header className="bg-[#0f172a] text-white flex-shrink-0 px-6 py-6 text-center">
         <h2 className="text-2xl sm:text-3xl font-medium leading-tight">
           Trade across NSE, BSE & MCX
         </h2>
@@ -28,7 +28,7 @@ function App() {
         <div className="max-w-6xl mx-auto w-full">
 
           {/* Title */}
-          <h1 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] text-center mb-11">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-[#0f172a] text-center mb-12">
             One Smart Trading Platform for All Segments
           </h1>
 
@@ -54,10 +54,10 @@ function App() {
                 {/* WhatsApp Button */}
                 <div className="flex justify-center">
                   <a
-                    href="https://wa.me/9898427047?text=hello,%20i%20wan%20to%20start%20trading"
+                    href="https://wa.me/9898427047?text=hello,%20i%20want%20to%20start%20trading"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#25D366] text-white inline-flex items-center justify-center gap-2 px-6 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold shadow-xl hover:bg-[#20BA5A] transition-all md:ml-150"
+                    className="bg-[#25D366] text-white inline-flex items-center justify-center gap-2 px-6 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold shadow-xl hover:bg-[#20BA5A] transition-all ml-50 md:ml-150"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
